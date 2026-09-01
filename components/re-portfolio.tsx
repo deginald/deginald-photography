@@ -4,38 +4,26 @@ const TILES = [
   {
     label: "Exterior — Twilight",
     span: "md:col-span-7",
-    ratio: "aspect-[16/10]",
-    src: "https://jgcskf0fzr0u8hwj.public.blob.vercel-storage.com/real-estate/exterior-twilight.jpg",
-  },
-  {
-    label: "Living Room",
-    span: "md:col-span-5",
-    ratio: "aspect-[4/5]",
-    src: "https://jgcskf0fzr0u8hwj.public.blob.vercel-storage.com/real-estate/living-room.jpg",
+    ratio: "aspect-[16/9]",
+    src: "https://g.tlcdn.com/gen/02aa7ed00e4f4c39bb537958389d6d1c.jpeg",
   },
   {
     label: "Aerial Flyover",
     span: "md:col-span-5",
-    ratio: "aspect-[4/5]",
-    src: "https://jgcskf0fzr0u8hwj.public.blob.vercel-storage.com/real-estate/aerial-flyover.jpg",
+    ratio: "aspect-[16/9]",
+    src: "https://g.tlcdn.com/gen/45ad44009a6b4d6c8439e5febc6eae01.jpeg",
   },
   {
-    label: "Kitchen Detail",
-    span: "md:col-span-7",
-    ratio: "aspect-[16/10]",
-    src: "https://jgcskf0fzr0u8hwj.public.blob.vercel-storage.com/real-estate/kitchen-detail.jpg",
+    label: "Living Room",
+    span: "md:col-span-6",
+    ratio: "aspect-[3/2]",
+    src: "https://g.tlcdn.com/gen/22c1efc9f5364d628381441815ccefac.jpeg",
   },
   {
     label: "Primary Suite",
     span: "md:col-span-6",
-    ratio: "aspect-square",
-    src: "https://jgcskf0fzr0u8hwj.public.blob.vercel-storage.com/real-estate/primary-suite.jpg",
-  },
-  {
-    label: "Video Walkthrough Still",
-    span: "md:col-span-6",
-    ratio: "aspect-square",
-    src: "https://jgcskf0fzr0u8hwj.public.blob.vercel-storage.com/real-estate/video-walkthrough-still.jpg",
+    ratio: "aspect-[3/2]",
+    src: "https://g.tlcdn.com/gen/ee6d6ccff209451bb9d7bd9f2d168b7f.jpeg",
   },
 ];
 
@@ -62,16 +50,17 @@ export function RealEstatePortfolio() {
           {TILES.map((t) => (
             <div
               key={t.label}
-              className={`group relative overflow-hidden rounded-sm border border-white/10 ${t.span} ${t.ratio}`}
+              className={`group relative overflow-hidden rounded-sm border border-white/10 bg-[#1a1812] ${t.span} ${t.ratio}`}
             >
               <Image
                 src={t.src}
                 alt={t.label}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-contain transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 flex items-end p-5">
-                <span className="font-display text-lg italic text-[#f2ede4]/60">
+                <span className="font-display text-lg italic text-[#f2ede4]/60 [text-shadow:0_1px_6px_rgba(0,0,0,0.6)]">
                   {t.label}
                 </span>
               </div>
