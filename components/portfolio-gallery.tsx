@@ -1,10 +1,42 @@
+import Image from "next/image";
+
 const TILES = [
-  { label: "Downtown Portraits", span: "md:col-span-7", ratio: "aspect-[4/5]" },
-  { label: "Golden Hour", span: "md:col-span-5", ratio: "aspect-[4/5]" },
-  { label: "Studio Light", span: "md:col-span-5", ratio: "aspect-[3/4]" },
-  { label: "On Location", span: "md:col-span-7", ratio: "aspect-[16/10]" },
-  { label: "Candid Series", span: "md:col-span-6", ratio: "aspect-square" },
-  { label: "Family Sessions", span: "md:col-span-6", ratio: "aspect-square" },
+  {
+    label: "Downtown Portraits",
+    span: "md:col-span-7",
+    ratio: "aspect-[1536/1024]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/dowtown-portraits.png",
+  },
+  {
+    label: "Golden Hour",
+    span: "md:col-span-5",
+    ratio: "aspect-[1024/1536]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/golden-hour.png",
+  },
+  {
+    label: "Studio Light",
+    span: "md:col-span-7",
+    ratio: "aspect-[1534/1025]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/stidio-light.png",
+  },
+  {
+    label: "On Location",
+    span: "md:col-span-5",
+    ratio: "aspect-[1023/1537]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/on-location.png",
+  },
+  {
+    label: "Candid Series",
+    span: "md:col-span-5",
+    ratio: "aspect-[1440/1800]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/candid-series.jpg",
+  },
+  {
+    label: "Family Sessions",
+    span: "md:col-span-7",
+    ratio: "aspect-[1577/997]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/family-sessions.png",
+  },
 ];
 
 export function PortfolioGallery() {
@@ -21,28 +53,26 @@ export function PortfolioGallery() {
             </h2>
           </div>
           <p className="max-w-sm font-body text-sm text-[#f2ede4]/50">
-            A placeholder grid — drop in your favorite session frames here
-            once ready. Each tile is sized for a portrait-forward layout.
+            A selection of recent portrait and mini session frames, shot
+            on-location with natural light.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
-          {TILES.map((t, i) => (
+          {TILES.map((t) => (
             <div
               key={t.label}
-              className={`group relative overflow-hidden rounded-sm border border-white/10 ${t.span} ${t.ratio}`}
+              className={`group relative overflow-hidden rounded-sm border border-white/10 bg-[#1a1812] ${t.span} ${t.ratio}`}
             >
-              <div
-                className="absolute inset-0 bg-[#1a1812] transition-transform duration-700 group-hover:scale-105"
-                style={{
-                  backgroundImage:
-                    i % 2 === 0
-                      ? "linear-gradient(135deg, #241f16 0%, #0c0b09 100%)"
-                      : "linear-gradient(135deg, #2a1c12 0%, #0c0b09 100%)",
-                }}
+              <Image
+                src={t.src}
+                alt={t.label}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-contain transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 flex items-end p-5">
-                <span className="font-display text-lg italic text-[#f2ede4]/60">
+                <span className="font-display text-lg italic text-[#f2ede4]/60 [text-shadow:0_1px_6px_rgba(0,0,0,0.6)]">
                   {t.label}
                 </span>
               </div>

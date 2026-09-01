@@ -1,10 +1,24 @@
+import Image from "next/image";
+
 const TILES = [
-  { label: "Aerial Portrait", span: "md:col-span-7", ratio: "aspect-[16/10]" },
-  { label: "Property Flyover", span: "md:col-span-5", ratio: "aspect-[4/5]" },
-  { label: "Event Overhead", span: "md:col-span-5", ratio: "aspect-[4/5]" },
-  { label: "Landscape Wide", span: "md:col-span-7", ratio: "aspect-[16/10]" },
-  { label: "4K Video Still", span: "md:col-span-6", ratio: "aspect-square" },
-  { label: "Golden Hour Aerial", span: "md:col-span-6", ratio: "aspect-square" },
+  {
+    label: "Property Flyover",
+    span: "md:col-span-12",
+    ratio: "aspect-[1672/941]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/property-flyover.jpg",
+  },
+  {
+    label: "Landscape Wide",
+    span: "md:col-span-6",
+    ratio: "aspect-[1535/1024]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/landscape-wide.png",
+  },
+  {
+    label: "Golden Hour Aerial",
+    span: "md:col-span-6",
+    ratio: "aspect-[1536/1024]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/golden-hour-aerial.png",
+  },
 ];
 
 export function DronePortfolio() {
@@ -21,28 +35,26 @@ export function DronePortfolio() {
             </h2>
           </div>
           <p className="max-w-sm font-body text-sm text-[#f2ede4]/50">
-            Placeholder grid — drop in real flight footage and stills once
-            shoots are delivered.
+            Flight footage and stills from recent property and landscape
+            shoots.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
-          {TILES.map((t, i) => (
+          {TILES.map((t) => (
             <div
               key={t.label}
-              className={`group relative overflow-hidden rounded-sm border border-white/10 ${t.span} ${t.ratio}`}
+              className={`group relative overflow-hidden rounded-sm border border-white/10 bg-[#1a1812] ${t.span} ${t.ratio}`}
             >
-              <div
-                className="absolute inset-0 bg-[#1a1812] transition-transform duration-700 group-hover:scale-105"
-                style={{
-                  backgroundImage:
-                    i % 2 === 0
-                      ? "linear-gradient(135deg, #241f16 0%, #0c0b09 100%)"
-                      : "linear-gradient(135deg, #2a1c12 0%, #0c0b09 100%)",
-                }}
+              <Image
+                src={t.src}
+                alt={t.label}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-contain transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 flex items-end p-5">
-                <span className="font-display text-lg italic text-[#f2ede4]/60">
+                <span className="font-display text-lg italic text-[#f2ede4]/60 [text-shadow:0_1px_6px_rgba(0,0,0,0.6)]">
                   {t.label}
                 </span>
               </div>
