@@ -29,21 +29,21 @@ export function GeneralContact() {
           </h2>
           <p className="mt-6 max-w-sm font-body text-sm text-[#f2ede4]/60">
             Tell me a bit about what you're picturing and I'll point you to
-            the right session — portrait, drone, or real estate.
+            the right session, portrait, drone, or real estate.
           </p>
 
           <div className="mt-12 flex flex-col gap-5">
             <div className="flex items-center gap-3 font-body text-sm text-[#f2ede4]/70">
               <Mail className="h-4 w-4 text-[#c9622a]" />
-              hello@deginaldphoto.com
+              carolinakingphotography@gmail.com
             </div>
             <div className="flex items-center gap-3 font-body text-sm text-[#f2ede4]/70">
               <Phone className="h-4 w-4 text-[#c9622a]" />
-              (555) 010-0123
+              (910) 612-2180
             </div>
             <div className="flex items-center gap-3 font-body text-sm text-[#f2ede4]/70">
               <MapPin className="h-4 w-4 text-[#c9622a]" />
-              Johnson City, TN — travel available
+              Surf City, NC — travel available
             </div>
           </div>
         </div>
