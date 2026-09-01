@@ -37,7 +37,7 @@ export function BookingSection() {
             something honest.
           </h2>
           <p className="mt-6 max-w-sm font-body text-sm text-[#f2ede4]/60">
-            Tell me your date, location, and what you're picturing — on the
+            Tell me your date, location, and what you're picturing on the
             ground or in the air. I'll follow up within a day or two to lock
             in the details.
           </p>
@@ -45,15 +45,15 @@ export function BookingSection() {
           <div className="mt-12 flex flex-col gap-5">
             <div className="flex items-center gap-3 font-body text-sm text-[#f2ede4]/70">
               <Mail className="h-4 w-4 text-[#c9622a]" />
-              hello@deginaldphoto.com
+              carolinakingphotography.com
             </div>
             <div className="flex items-center gap-3 font-body text-sm text-[#f2ede4]/70">
               <Phone className="h-4 w-4 text-[#c9622a]" />
-              (555) 010-0123
+              (910) 612-2180
             </div>
             <div className="flex items-center gap-3 font-body text-sm text-[#f2ede4]/70">
               <MapPin className="h-4 w-4 text-[#c9622a]" />
-              Johnson City, TN — travel available
+              Suf City, NC — travel available
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export function BookingSection() {
                 Request received
               </p>
               <p className="max-w-xs font-body text-sm text-[#f2ede4]/60">
-                Thanks — I'll reach out shortly to confirm your session
+                Thanks! I'll reach out shortly to confirm your session
                 details.
               </p>
             </div>
@@ -136,7 +136,7 @@ export function BookingSection() {
                 <Textarea
                   id="message"
                   rows={4}
-                  placeholder="Location, occasion, group size, vibe — or aerial coverage needs..."
+                  placeholder="Location, occasion, group size, vibe or aerial coverage needs..."
                   className="border-white/15 bg-transparent text-[#f2ede4] placeholder:text-[#f2ede4]/30"
                 />
               </div>
