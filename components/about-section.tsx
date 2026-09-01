@@ -13,16 +13,16 @@ export function AboutSection() {
 
         <div className="md:col-span-8">
           <p className="font-display text-2xl leading-relaxed text-[#f2ede4]/90 md:text-3xl">
-            I'm building toward great photography one session at a time —
+            I'm building toward great photography one session at a time,
             technical, organized, and obsessed with getting the light right
             before I ever ask you to move.
           </p>
           <p className="mt-8 max-w-2xl font-body text-base leading-relaxed text-[#f2ede4]/60">
             Every session is shot and edited with a simple rule: the people
             in front of my lens stay exactly who they are. No reshaping
-            bodies, no altering features — just honest portraits with clean,
-            confident editing. Based in Johnson City, TN, available to
-            travel for the right shoot — on the ground or in the air.
+            bodies, no altering features, just honest portraits with clean,
+            confident editing. Based in Surf City, NC available to
+            travel for the right shoot, on the ground or in the air.
           </p>
 
           <div className="mt-12 grid grid-cols-2 gap-8 border-t border-white/10 pt-8 sm:grid-cols-3">
