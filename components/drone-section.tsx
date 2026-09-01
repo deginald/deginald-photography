@@ -26,7 +26,7 @@ export function DroneSection() {
           <p className="mt-6 max-w-sm font-body text-sm leading-relaxed text-[#f2ede4]/60">
             Take your session, event, or property to the sky. FAA-compliant
             aerial photo &amp; video coverage that pairs with any ground
-            session — or stands on its own.
+            session or stands on its own.
           </p>
           <a
             href="#book"
