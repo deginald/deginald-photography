@@ -1,5 +1,42 @@
+# Dependencies
 node_modules
-.next
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
 .env*.local
 .vercel
 *.log
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Large media files — store in cloud or CDN instead
+# Upload high-res photos to Vercel Blob, AWS S3, Cloudinary, etc.
+public/images/**/*.jpg
+public/images/**/*.jpeg
+public/images/**/*.png
+public/images/**/*.gif
+public/images/**/*.webp
+public/images/**/*.mp4
+public/images/**/*.mov
+
+# Keep directory structure but ignore large files
+!public/images/
+!public/images/**/.gitkeep
