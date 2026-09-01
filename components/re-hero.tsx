@@ -15,7 +15,7 @@ export function RealEstateHero() {
         </h1>
         <p className="mt-8 max-w-xl font-body text-base leading-relaxed text-[#f2ede4]/60">
           Interior &amp; exterior photography, aerial drone coverage,
-          cinematic video walkthroughs, and twilight edits — everything an
+          cinematic video walkthroughs, and twilight edits everything an
           agent needs to make a listing stand out, 24-hour turnaround.
         </p>
         <a
