@@ -7,7 +7,7 @@ export function SiteFooter() {
         <div className="flex items-center gap-2">
           <Camera className="h-4 w-4 text-[#c9622a]" strokeWidth={1.5} />
           <span className="font-display text-sm text-[#f2ede4]/60">
-            Deginald Photography
+            Carolina King Photography
           </span>
         </div>
         <p className="font-body text-xs uppercase tracking-[0.15em] text-[#f2ede4]/30">
