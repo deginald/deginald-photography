@@ -1,10 +1,42 @@
+import Image from "next/image";
+
 const TILES = [
-  { label: "Exterior — Twilight", span: "md:col-span-7", ratio: "aspect-[16/10]" },
-  { label: "Living Room", span: "md:col-span-5", ratio: "aspect-[4/5]" },
-  { label: "Aerial Flyover", span: "md:col-span-5", ratio: "aspect-[4/5]" },
-  { label: "Kitchen Detail", span: "md:col-span-7", ratio: "aspect-[16/10]" },
-  { label: "Primary Suite", span: "md:col-span-6", ratio: "aspect-square" },
-  { label: "Video Walkthrough Still", span: "md:col-span-6", ratio: "aspect-square" },
+  {
+    label: "Exterior — Twilight",
+    span: "md:col-span-7",
+    ratio: "aspect-[16/10]",
+    src: "/images/real-estate/exterior-twilight.jpg",
+  },
+  {
+    label: "Living Room",
+    span: "md:col-span-5",
+    ratio: "aspect-[4/5]",
+    src: "/images/real-estate/living-room.jpg",
+  },
+  {
+    label: "Aerial Flyover",
+    span: "md:col-span-5",
+    ratio: "aspect-[4/5]",
+    src: "/images/real-estate/aerial-flyover.jpg",
+  },
+  {
+    label: "Kitchen Detail",
+    span: "md:col-span-7",
+    ratio: "aspect-[16/10]",
+    src: "/images/real-estate/kitchen-detail.jpg",
+  },
+  {
+    label: "Primary Suite",
+    span: "md:col-span-6",
+    ratio: "aspect-square",
+    src: "/images/real-estate/primary-suite.jpg",
+  },
+  {
+    label: "Video Walkthrough Still",
+    span: "md:col-span-6",
+    ratio: "aspect-square",
+    src: "/images/real-estate/video-walkthrough-still.jpg",
+  },
 ];
 
 export function RealEstatePortfolio() {
@@ -21,26 +53,22 @@ export function RealEstatePortfolio() {
             </h2>
           </div>
           <p className="max-w-sm font-body text-sm text-[#f2ede4]/50">
-            Placeholder grid — swap in real property photos, twilight
-            conversions, and aerial stills once your listing shoots are
-            delivered.
+            Professional real estate photography including interiors, exteriors,
+            twilight edits, and drone coverage.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
-          {TILES.map((t, i) => (
+          {TILES.map((t) => (
             <div
               key={t.label}
               className={`group relative overflow-hidden rounded-sm border border-white/10 ${t.span} ${t.ratio}`}
             >
-              <div
-                className="absolute inset-0 bg-[#1a1812] transition-transform duration-700 group-hover:scale-105"
-                style={{
-                  backgroundImage:
-                    i % 2 === 0
-                      ? "linear-gradient(135deg, #241f16 0%, #0c0b09 100%)"
-                      : "linear-gradient(135deg, #2a1c12 0%, #0c0b09 100%)",
-                }}
+              <Image
+                src={t.src}
+                alt={t.label}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 flex items-end p-5">
                 <span className="font-display text-lg italic text-[#f2ede4]/60">
