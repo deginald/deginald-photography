@@ -5,25 +5,31 @@ const TILES = [
     label: "Exterior — Twilight",
     span: "md:col-span-7",
     ratio: "aspect-[16/9]",
-    src: "https://g.tlcdn.com/gen/02aa7ed00e4f4c39bb537958389d6d1c.jpeg",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/exterior-twilight.png",
   },
   {
     label: "Aerial Flyover",
     span: "md:col-span-5",
     ratio: "aspect-[16/9]",
-    src: "https://g.tlcdn.com/gen/45ad44009a6b4d6c8439e5febc6eae01.jpeg",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/aerial-flyover.jpg",
   },
   {
     label: "Living Room",
-    span: "md:col-span-6",
+    span: "md:col-span-4",
     ratio: "aspect-[3/2]",
-    src: "https://g.tlcdn.com/gen/22c1efc9f5364d628381441815ccefac.jpeg",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/living-room.jpg",
+  },
+  {
+    label: "Kitchen Detail",
+    span: "md:col-span-4",
+    ratio: "aspect-[3/2]",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/kitchen-detail.jpg",
   },
   {
     label: "Primary Suite",
-    span: "md:col-span-6",
+    span: "md:col-span-4",
     ratio: "aspect-[3/2]",
-    src: "https://g.tlcdn.com/gen/ee6d6ccff209451bb9d7bd9f2d168b7f.jpeg",
+    src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/primary-suite.jpg",
   },
 ];
 
