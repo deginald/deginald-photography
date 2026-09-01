@@ -2,25 +2,25 @@ import Image from "next/image";
 
 const TILES = [
   {
-    label: "Downtown Portraits",
+    label: "Portraits",
     span: "md:col-span-7",
     ratio: "aspect-[1536/1024]",
     src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/dowtown-portraits.png",
   },
   {
-    label: "Golden Hour",
+    label: "Maternity",
     span: "md:col-span-5",
     ratio: "aspect-[1024/1536]",
     src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/golden-hour.png",
   },
   {
-    label: "Studio Light",
+    label: "Prom",
     span: "md:col-span-7",
     ratio: "aspect-[1534/1025]",
     src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/stidio-light.png",
   },
   {
-    label: "On Location",
+    label: "Graduation",
     span: "md:col-span-5",
     ratio: "aspect-[1023/1537]",
     src: "https://xluscvqwnxqmmi0m.public.blob.vercel-storage.com/on-location.png",
