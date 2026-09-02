@@ -16,12 +16,12 @@ type Tier = "professional" | "premier";
 
 const TIER_INFO: Record<Tier, { name: string; tagline: string; features: string[] }> = {
   professional: {
-    name: "Professional Photography Package",
+    name: "Prince Standard Package",
     tagline: "Everything a listing needs",
     features: ["High-quality listing photos", "Blue sky guarantee", "24-hour delivery"],
   },
   premier: {
-    name: "Premier Package",
+    name: "King Premier Package",
     tagline: "For listings where timing matters",
     features: [
       "Everything from Professional, plus:",
