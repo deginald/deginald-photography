@@ -15,7 +15,7 @@ export function PortraitsHero() {
           <span className="italic text-[#c9622a]">One good light.</span>
         </h1>
         <p className="mt-8 max-w-xl font-body text-base leading-relaxed text-[#f2ede4]/60">
-          On-location mini sessions built for real moments — clean edits, no
+          On-location mini sessions built for real moments, clean edits, no
           filters that change who you are.
         </p>
         <a

@@ -27,7 +27,7 @@ export function HeroSection() {
 
         <div className="mt-10 flex flex-col items-start justify-between gap-8 border-t border-white/10 pt-8 md:flex-row md:items-end">
           <p className="max-w-md font-body text-base text-[#f2ede4]/70">
-            Portraits, aerial coverage, and real estate media — clean edits,
+            Portraits, aerial coverage, and real estate media, clean edits,
             no filters that change who you are. Booking now for the season.
           </p>
           <a
