@@ -20,7 +20,7 @@ export function MainNav({ bookHref = "#book" }: { bookHref?: string }) {
         <Link href="/" className="flex items-center gap-2">
           <Camera className="h-5 w-5 text-[#c9622a]" strokeWidth={1.5} />
           <span className="font-display text-lg tracking-wide text-[#f2ede4]">
-            Deginald<span className="text-[#c9622a]">.</span>
+            Deginald | Carolin King Photography<span className="text-[#c9622a]">.</span>
           </span>
         </Link>
 
